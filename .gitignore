@@ -1,4 +1,4 @@
-dnd_toolbox/secret_key.txt
+rp_toolbox/secret_key.txt
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml

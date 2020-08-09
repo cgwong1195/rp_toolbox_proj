@@ -1,5 +1,5 @@
 """
-WSGI config for dnd_toolbox project.
+WSGI config for rp_toolbox project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dnd_toolbox.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'rp_toolbox.settings')
 
 application = get_wsgi_application()
