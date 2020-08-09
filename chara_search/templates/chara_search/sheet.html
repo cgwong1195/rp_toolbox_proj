@@ -1,0 +1,24 @@
+<h1>Character Sheet for {{ sheet.character.display_name }}</h1>
+
+<p>First Name: {{sheet.character.first_name}}</p>
+<p>Middle Name: {{sheet.character.middle_name}}</p>
+<p>Last Name: {{sheet.character.last_name}}</p>
+<p>Race: {{sheet.character.race}}</p>
+<p>Class: {{sheet.character.character_class}}</p>
+<br>
+<p>Level: {{sheet.level}}</p>
+<p>Current EXP: {{sheet.experience}}</p>
+<p>Strength: {{sheet.strength}}</p>
+<p>Constitution: {{sheet.constitution}}</p>
+<p>Dexterity: {{sheet.dexterity}}</p>
+<p>Intelligence: {{sheet.intelligence}}</p>
+<p>Wisdom: {{sheet.wisdom}}</p>
+<p>Charisma: {{sheet.charisma}}</p>
+
+{% if request.session.query %}
+    <a href="/chara_search/search/?display_name={{request.session.query}}">Return to Search results for {{request.session.query}}</a><br>
+{% else %}
+    <a href="{% url 'chara_search:index' %}">Return to Home</a>
+{% endif %}
+<br>
+<a href="{% url 'home:index' %}">Return Home</a>
